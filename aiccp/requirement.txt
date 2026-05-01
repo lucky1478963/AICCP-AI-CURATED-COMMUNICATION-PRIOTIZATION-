@@ -1,0 +1,7 @@
+streamlit
+pandas
+plotly
+mysql-connector-python
+boto3
+streamlit-autorefresh
+

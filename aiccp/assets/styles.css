@@ -1,0 +1,99 @@
+body{
+    background-color:#050816;
+    color:white;
+}
+
+/* Main App */
+.stApp{
+    background:
+    linear-gradient(
+    to bottom right,
+    #050816,
+    #09122c,
+    #000814
+    );
+}
+
+
+/* Sidebar */
+section[data-testid="stSidebar"]{
+    background-color:#020617;
+    border-right:1px solid #0ea5e9;
+}
+
+
+/* Cards */
+div[data-testid="metric-container"]{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(14,165,233,0.3);
+    padding:15px;
+    border-radius:18px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 15px rgba(14,165,233,0.2);
+}
+
+
+/* Headers */
+h1,h2,h3{
+    color:#38bdf8;
+}
+
+
+/* Buttons */
+.stButton>button{
+    background:linear-gradient(
+    90deg,
+    #0ea5e9,
+    #2563eb
+    );
+
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:10px 20px;
+    font-weight:bold;
+}
+
+
+/* Alert Banner */
+.alert-banner{
+    padding:15px;
+    background:red;
+    color:white;
+    border-radius:15px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    animation:pulse 1.5s infinite;
+}
+
+
+/* Animation */
+@keyframes pulse{
+
+0%{
+opacity:1;
+}
+
+50%{
+opacity:0.6;
+}
+
+100%{
+opacity:1;
+}
+
+}
+
+
+/* Tables */
+[data-testid="stDataFrame"]{
+    border-radius:15px;
+    overflow:hidden;
+}
+
+
+/* Progress Bar */
+.stProgress>div>div{
+    background:#38bdf8;
+}

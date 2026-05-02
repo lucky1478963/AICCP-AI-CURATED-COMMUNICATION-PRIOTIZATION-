@@ -1,12 +1,27 @@
+
 import streamlit as st
 
-st.set_page_config(
-page_title="AICCP Enterprise Mission Control",
-layout="wide"
-)
 
-try: with open( "assets/styles.css" ) as f: st.markdown( f"<style>{f.read()}</style>", unsafe_allow_html=True ) except: st.warning( "CSS file not found" )
+# =====================================
+# LOAD CSS SAFELY
+# =====================================
 
+try:
+
+    with open(
+    "assets/styles.css"
+    ) as f:
+
+        st.markdown(
+        f"<style>{f.read()}</style>",
+        unsafe_allow_html=True
+        )
+
+except:
+
+    st.warning(
+    "CSS file not found"
+    )
 
 st.title(
 " AICCP (AI CURATED COMMUNICATION PRIOTIZATION)"

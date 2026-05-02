@@ -1,63 +1,27 @@
-
+```python id="exist02"
 import streamlit as st
 
-
-# =====================================
-# LOAD CSS SAFELY
-# =====================================
-
-try:
-
-    with open(
-    "assets/styles.css"
-    ) as f:
-
-        st.markdown(
-        f"<style>{f.read()}</style>",
-        unsafe_allow_html=True
-        )
-
-except:
-
-    st.warning(
-    "CSS file not found"
-    )
+st.set_page_config(
+page_title="AICCP",
+layout="wide"
+)
 
 st.title(
-" AICCP (AI CURATED COMMUNICATION PRIOTIZATION)"
+"🛰 AICCP Enterprise AI System"
+)
+
+st.success(
+"System Online"
 )
 
 st.markdown(
 """
-<div class="alert-banner">
-⚠ CRITICAL SATELLITE ALERT MONITOR ACTIVE
-</div>
-""",
-unsafe_allow_html=True
-)
-
-st.success(
-"""
-AI Communication Curation Platform
-Operational
-"""
-)
-
-st.sidebar.title(
-"🛰 Navigation"
-)
-
-st.sidebar.success(
-"Mission Systems Online"
-)
-
-st.info(
-"""
-Use sidebar to access:
+Use the sidebar to access:
 - Dashboard
 - Optimizer
 - Digital Twin
-- Ground Station
+- Telemetry
 - Admin Panel
 """
 )
+```
